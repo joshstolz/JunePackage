@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/joshstolz/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "JunePackage Demonstration",
+        author = personList(
+            as.person("joshstolz")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/JunePackage",
+        note = pkgVer('JunePackage'),
+        doi = '10.18129/B9.bioc.JunePackage'
+    ),
+    bibentry(bibtype="article",
+        title = "JunePackage Demonstration",
+        author = personList(
+            as.person("joshstolz")
+        ),
+        year = 2020,
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)
