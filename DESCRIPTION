@@ -10,7 +10,7 @@ Authors@R:
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: JunePackage is being created and updated to demonstrate biocthis on the cluster.
 License: Artistic-2.0
-URL: https://github.com//joshstolz/JunePackage
+URL: https://github.com/joshstolz/JunePackage
 BugReports: https://support.bioconductor.org/t/JunePackage
 biocViews: Software
 Encoding: UTF-8
